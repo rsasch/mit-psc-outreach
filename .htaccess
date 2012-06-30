@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|robots\.txt|user_guide|styles|scripts|uploads|synch_users|check_expirations)
+RewriteRule ^(.*)$ /mit-psc-outreach/index.php/$1 [L]
+
+php_value post_max_size                   2M
+php_value upload_max_filesize             1M
