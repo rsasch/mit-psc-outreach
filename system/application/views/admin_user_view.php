@@ -60,7 +60,7 @@
 		<?php else: ?>
 		<p>PSC administrators may edit administrator profile information below.</p>
 		<?php endif; ?>
-		<?=form_open($controller . "/" . $mode . "/" . $user->user_id)?>
+		<form action="http://localhost:8888/mit-psc-outreach/<?=($controller . "/" . $mode . "/" . $user->user_id)?>" method="post">
 			<fieldset>
 				<?php if (isset($user)): ?>
 					<div class="container">
@@ -110,7 +110,7 @@
 				<input type="submit" value="Save" name="save" />
 				<?php endif; ?>
 			</div>
-		<?=form_close()?>
+		</form>
 	</div>
 	<!-- end content -->
 </div>

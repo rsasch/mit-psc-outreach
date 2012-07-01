@@ -31,7 +31,7 @@
 		<p class="sitename">MIT Outreach Database</p>
 		<h1 class="pagename">Notification Management</h1>
 		<p>To edit automated email messages, type edits into the fields below.</p>
-		<?=form_open("adminmessage/edit")?>
+		<form action="http://localhost:8888/mit-psc-outreach/adminmessage/edit" method="post">
 			<fieldset>
 			<?php foreach ($messages as $message): ?>
 				<div class="container">
@@ -43,7 +43,7 @@
 			<div class="buttons">
 				<input type="submit" value="Save" name="save" />				
 			</div>
-		<?=form_close()?>
+		</form>
 	</div>
 	<!-- end content -->
 </div>

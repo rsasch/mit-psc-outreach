@@ -26,7 +26,7 @@
 	<div id="content">
 		<h1 class="sitename">MIT Outreach Database</h1>
 		<h2 class="subhead">Your connection to outreach opportunities at MIT</h2>
-		<?=form_open("/home/search")?>
+		<form action="http://localhost:8888/mit-psc-outreach/home/search" method="post">
 		<div id="search">
 			<p class="intro">Welcome! MIT’s Outreach Database is a portal for learning about the wide range of MIT’s outreach programs offered to children, families, teachers, adults, and many others. Use this website as a tool to gain information about the amazing scope and depth of the great programming MIT offers the community.  Find out more about the purpose of this site and our definition of an outreach program at the <a href="/mit-psc-outreach/about">about us link</a>.</p>
 			<p class="intro">Search the database using the keyword search and criteria below. Entering more criteria will net more limited results.</p>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<?php if($css_class != "results"):?>
-		<?=form_close();?>
+		</form>
 		<?php else: ?>
 		<div id="results">
 			<div class="container">
@@ -72,7 +72,7 @@
 			<p>No results found. Be creative with your searches and remember that fewer criteria will net you more responses to browse through.</p>
 			<?php endif; ?>
 		</div>
-		<?=form_close();?>
+		</form>
 		<?php endif; ?>
 	</div>
 	<!-- end content -->

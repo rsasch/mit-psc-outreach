@@ -7,5 +7,5 @@
 		<a href="http://mit.edu/mitpsc/about/support.html" rel="external" class="support">Support the PSC</a>
 		<div class="clear">&nbsp;</div>
 	</div>
-	<p class="logo"><a href="http://web.mit.edu/mitpsc" rel="external"><img src="/outreach/images/logo-psc.gif" alt="MIT Public Service Center" /></a></p>
+	<p class="logo"><a href="http://web.mit.edu/mitpsc" rel="external"><img src="/mit-psc-outreach/images/logo-psc.gif" alt="MIT Public Service Center" /></a></p>
 </div>

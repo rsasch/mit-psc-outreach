@@ -31,12 +31,12 @@
 	<div id="sidebar">
 		<?php if ($program->photo_path): ?>
 		<div class="photo">
-			<div class="inner"><img src="/outreach/images/programs/<?=$program->photo_path?>" alt="" /></div>
+			<div class="inner"><img src="/mit-psc-outreach/images/programs/<?=$program->photo_path?>" alt="" /></div>
 		</div>
 		<?php endif; ?>
 		<?php if ($program->logo_path): ?>
 		<div class="logo">
-			<div class="inner"><img src="/outreach/images/programs/<?=$program->logo_path?>" alt="" /></div>
+			<div class="inner"><img src="/mit-psc-outreach/images/programs/<?=$program->logo_path?>" alt="" /></div>
 		</div>
 		<?php endif; ?>
 		<p>&nbsp;</p>
