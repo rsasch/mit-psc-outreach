@@ -325,5 +325,17 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 
+/*
+|--------------------------------------------------------------------------
+| Environment
+|--------------------------------------------------------------------------
+|
+| If you want to test/develop the application out without setting up SSL,
+| but still have access to the admin interface (very insecure) set to "dev".
+|
+*/
+$config['env'] = 'dev';
+
+
 /* End of file config.php */
 /* Location: ./system/application/config/config.php */

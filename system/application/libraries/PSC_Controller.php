@@ -5,7 +5,10 @@
 class PSC_Controller extends Controller {
 
 	// PSC administrator email/list for notifications
-	protected $PSCemail = "outreach-notify@mit.edu";
+	protected $PSCemail = "rsa@mit.edu";
+	if ($this->config->item('env') != 'dev') {
+		$PSCemail = "outreach-notify@mit.edu";
+	}
 
 	function PSC_Controller() {
 		parent::Controller();
