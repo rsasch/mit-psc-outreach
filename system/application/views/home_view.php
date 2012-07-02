@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link href="/mit-psc-outreach/styles/main.css" rel="stylesheet" type="text/css" />
-	<script src="/mit-psc-outreach/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-	<script src="/mit-psc-outreach/scripts/common.js" type="text/javascript"></script>
+	<link href="<?=base_url()?>styles/main.css" rel="stylesheet" type="text/css" />
+	<script src="<?=base_url()?>scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>scripts/common.js" type="text/javascript"></script>
 </head>
 <body<?php if(isset($css_class)):?> class="<?=$css_class?>"<?php endif; ?>>
 <p class="skip"><a href="#content" id="top">skip to content</a></p>
@@ -26,9 +26,9 @@
 	<div id="content">
 		<h1 class="sitename">MIT Outreach Database</h1>
 		<h2 class="subhead">Your connection to outreach opportunities at MIT</h2>
-		<form action="http://localhost:8888/mit-psc-outreach/home/search" method="post">
+		<form action="<?=base_url()?>home/search" method="post">
 		<div id="search">
-			<p class="intro">Welcome! MIT’s Outreach Database is a portal for learning about the wide range of MIT’s outreach programs offered to children, families, teachers, adults, and many others. Use this website as a tool to gain information about the amazing scope and depth of the great programming MIT offers the community.  Find out more about the purpose of this site and our definition of an outreach program at the <a href="/mit-psc-outreach/about">about us link</a>.</p>
+			<p class="intro">Welcome! MIT’s Outreach Database is a portal for learning about the wide range of MIT’s outreach programs offered to children, families, teachers, adults, and many others. Use this website as a tool to gain information about the amazing scope and depth of the great programming MIT offers the community.  Find out more about the purpose of this site and our definition of an outreach program at the <a href="<?=base_url()?>about">about us link</a>.</p>
 			<p class="intro">Search the database using the keyword search and criteria below. Entering more criteria will net more limited results.</p>
 			<hr />
 			<h2><?=$heading?></h2>
@@ -39,7 +39,7 @@
 				<input type="submit" value="Search" name="search" id="topbutton" />
 			</div>
 			<div class="clear">&nbsp;</div>
-			<p class="viewall"><a href="/mit-psc-outreach/home/search">View all programs</a></p>
+			<p class="viewall"><a href="<?=base_url()?>home/search">View all programs</a></p>
 			</fieldset>
 			<hr />
 			<h2 class="criteria">Search by criteria</h2>
@@ -64,7 +64,7 @@
 			<?php if ($programs): ?>
 			<?php include("includes/pagination_results.php"); ?>
 			<?php foreach ($programs as $program): ?>
-			<h3><a href="/mit-psc-outreach/program/view/<?=$program->program_id?>/search"><?=$program->title?></a></h3>
+			<h3><a href="<?=base_url()?>program/view/<?=$program->program_id?>/search"><?=$program->title?></a></h3>
 			<p><?=$program->description_short?></p>
 			<?php endforeach; ?>
 			<?php include("includes/pagination_results.php"); ?>
@@ -80,8 +80,8 @@
 	<div id="sidebar">
 	<?php foreach ($spotlights as $spotlight): ?>
 		<div class="spotlight">
-			<div class="photo"><div class="inner"><a href="/mit-psc-outreach/program/view/<?=$spotlight->program_id?>/spotlight"><img src="/mit-psc-outreach/images/programs/<?=$spotlight->photo_path?>" alt="" /></a></div></div>
-			<p><a href="/mit-psc-outreach/program/view/<?=$spotlight->program_id?>/spotlight"><?=$spotlight->title?></a></p>
+			<div class="photo"><div class="inner"><a href="<?=base_url()?>program/view/<?=$spotlight->program_id?>/spotlight"><img src="<?=base_url()?>images/programs/<?=$spotlight->photo_path?>" alt="" /></a></div></div>
+			<p><a href="<?=base_url()?>program/view/<?=$spotlight->program_id?>/spotlight"><?=$spotlight->title?></a></p>
 		</div>
 		<p>&nbsp;</p>
 	<?php endforeach; ?>

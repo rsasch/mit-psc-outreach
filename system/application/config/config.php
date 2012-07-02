@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://http://localhost:8888/mit-psc-outreach/";
+$config['base_url']	= "http://localhost:8888/mit-psc-outreach/";
 
 /*
 |--------------------------------------------------------------------------

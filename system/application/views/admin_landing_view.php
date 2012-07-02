@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link href="/mit-psc-outreach/styles/main.css" rel="stylesheet" type="text/css" />
-	<script src="/mit-psc-outreach/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-	<script src="/mit-psc-outreach/scripts/common.js" type="text/javascript"></script>
+	<link href="<?=base_url()?>styles/main.css" rel="stylesheet" type="text/css" />
+	<script src="<?=base_url()?>scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>scripts/common.js" type="text/javascript"></script>
 </head>
 <body class="admin">
 <p class="skip"><a href="#content" id="top">skip to content</a></p>
@@ -36,7 +36,7 @@
 			</div>
 			<div class="toplink">
 				<div class="outer">
-					<div class="inner"><a href="/mit-psc-outreach/adminprogram/edit">+ Add a new program</a></div>
+					<div class="inner"><a href="<?=base_url()?>adminprogram/edit">+ Add a new program</a></div>
 				</div>
 			</div>
 		</div>
@@ -66,7 +66,7 @@
 				<?php foreach ($newusers as $user): ?>
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
-					<td><a href="/mit-psc-outreach/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+					<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 					<td><?=$user->dlc?></td>	
 					<td><?=$user->email?></td>
 				</tr>
@@ -94,9 +94,9 @@
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
 					<?php if ($userlevel == "0"): ?>
-						<td><a href="/mit-psc-outreach/adminprogram/edit/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>adminprogram/edit/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<?php else: ?>
-						<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<?php endif; ?>
 					<td><?=$program->last_name?>, <?=$program->first_name?></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
@@ -125,9 +125,9 @@
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
 					<?php if ($userlevel == "0"): ?>
-						<td><a href="/mit-psc-outreach/adminprogram/edit/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>adminprogram/edit/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<?php else: ?>
-						<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<?php endif; ?>
 					<td><?=$program->last_name?>, <?=$program->first_name?></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
@@ -157,9 +157,9 @@
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
 					<?php if ($userlevel == "0"): ?>
-						<td><a href="/mit-psc-outreach/adminprogram/edit/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>adminprogram/edit/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<?php else: ?>
-						<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<?php endif; ?>
 					<td><?=$program->last_name?>, <?=$program->first_name?></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate . " +13 month"))?></td>
@@ -187,7 +187,7 @@
 				<?php foreach ($programs as $program): ?>
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
-					<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+					<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
 				</tr>
 				<?php endforeach; ?>
@@ -212,7 +212,7 @@
 				<?php foreach ($newprograms as $program): ?>
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
-					<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+					<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
 				</tr>
 				<?php endforeach; ?>
@@ -236,7 +236,7 @@
 				<?php foreach ($unsubmitted as $program): ?>
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
-					<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+					<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
 				</tr>
 				<?php endforeach; ?>
@@ -261,7 +261,7 @@
 				<?php foreach ($editedprograms as $program): ?>
 				<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 				<tr class="<?=$even_odd?>">
-					<td><a href="/mit-psc-outreach/adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+					<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
 				</tr>
 				<?php endforeach; ?>

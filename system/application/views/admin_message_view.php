@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link href="/mit-psc-outreach/styles/main.css" rel="stylesheet" type="text/css" />
-	<script src="/mit-psc-outreach/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-	<script src="/mit-psc-outreach/scripts/common.js" type="text/javascript"></script>
+	<link href="<?=base_url()?>styles/main.css" rel="stylesheet" type="text/css" />
+	<script src="<?=base_url()?>scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>scripts/common.js" type="text/javascript"></script>
 </head>
 <body class="admin">
 <p class="skip"><a href="#content" id="top">skip to content</a></p>

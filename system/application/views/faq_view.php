@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link href="/mit-psc-outreach/styles/main.css" rel="stylesheet" type="text/css" />
-	<script src="/mit-psc-outreach/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-	<script src="/mit-psc-outreach/scripts/common.js" type="text/javascript"></script>
+	<link href="<?=base_url()?>styles/main.css" rel="stylesheet" type="text/css" />
+	<script src="<?=base_url()?>scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 <p class="skip"><a href="#content" id="top">skip to content</a></p>
@@ -44,11 +44,11 @@
 		<h2 class="faq">Who is the audience for the MIT Outreach Database?</h2>
 		<p>The MIT Outreach Database provides a portal through which people can easily learn about MIT's outreach opportunities. The primary audience for the database includes MIT students and other members of the MIT community, K-12 teachers and parents, families, and others throughout the world.</p>
 		<h2 class="faq">I know of an outreach program at MIT, but I don't see it listed. What should I do?</h2>
-		<p>Let us know about it! Please <a href="/mit-psc-outreach/contact">"contact us"</a>.</p>
+		<p>Let us know about it! Please <a href="<?=base_url()?>contact">"contact us"</a>.</p>
 		<h2 class="faq">I am an outreach program administrator. How do I add my program to the MIT Outreach Database?</h2>
-		<p>Go to the <a href="/mit-psc-outreach/login">"MIT Program Administrators"</a> page to request an account.</p>
+		<p>Go to the <a href="<?=base_url()?>login">"MIT Program Administrators"</a> page to request an account.</p>
 		<h2 class="faq">I have additional questions that do not appear here. What should I do?</h2>
-		<p>Please <a href="/mit-psc-outreach/contact">"contact us"</a>.</p>
+		<p>Please <a href="<?=base_url()?>contact">"contact us"</a>.</p>
 	</div>
 	<!-- end content -->
 	<!-- begin sidebar -->

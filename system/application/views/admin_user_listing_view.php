@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link href="/mit-psc-outreach/styles/main.css" rel="stylesheet" type="text/css" />
-	<script src="/mit-psc-outreach/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-	<script src="/mit-psc-outreach/scripts/common.js" type="text/javascript"></script>
+	<link href="<?=base_url()?>styles/main.css" rel="stylesheet" type="text/css" />
+	<script src="<?=base_url()?>scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>scripts/common.js" type="text/javascript"></script>
 </head>
 <body class="admin">
 <p class="skip"><a href="#content" id="top">skip to content</a></p>
@@ -47,7 +47,7 @@
 			<?php foreach ($pscusers as $user): ?>
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
-				<td><a href="/mit-psc-outreach/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+				<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 				<td><?=$user->dlc?></td>
 				<td><?=$user->email?></td>
 			</tr>
@@ -74,7 +74,7 @@
 			<?php foreach ($progusers as $user): ?>
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
-				<td><a href="/mit-psc-outreach/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+				<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 				<td><?=$user->dlc?></td>
 				<td><?=$user->email?></td>
 			</tr>
@@ -102,7 +102,7 @@
 			<?php foreach ($inactiveusers as $user): ?>
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
-				<td><a href="/mit-psc-outreach/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+				<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 				<td><?=$user->role_name?></td>
 				<td><?=$user->dlc?></td>
 				<td><?=$user->kerb?></td>

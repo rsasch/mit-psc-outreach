@@ -14,7 +14,7 @@ class PSC_Admincontroller extends PSC_Controller {
 	}
 	
 	function index() {
-		$obj =&get_instance();
+		$obj =& get_instance();
 
 		if ($obj->config->item('env') != 'dev') {
 			// ssl variables

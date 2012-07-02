@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link href="/mit-psc-outreach/styles/main.css" rel="stylesheet" type="text/css" />
-	<script src="/mit-psc-outreach/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
-	<script src="/mit-psc-outreach/scripts/common.js" type="text/javascript"></script>
+	<link href="<?=base_url()?>styles/main.css" rel="stylesheet" type="text/css" />
+	<script src="<?=base_url()?>scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="<?=base_url()?>scripts/common.js" type="text/javascript"></script>
 </head>
 <?php if (isset($userid)): ?>
 <body class="admin">
@@ -48,7 +48,7 @@
 		<p>List your volunteer opportunity in the Public Service Center's weekly e-bulletin. Submit your information here: <a href="http://mit.edu/mitpsc/guides/csb-posting-form.html" rel="external">http://mit.edu/mitpsc/guides/csb-posting-form.html</a></p>
 		<h2>Questions about the Outreach Database?</h2>
 		<p>We'd love to hear from you. Please contact Kristi Gundrum Kebinger, MIT Public Service Center, <a href="mailto:outreach@mit.edu">outreach@mit.edu</a>, x3-8968.</p>
-		<p><a href="/mit-psc-outreach/admin">Return to Program Management homepage</a></p>
+		<p><a href="<?=base_url()?>admin">Return to Program Management homepage</a></p>
 	</div>
 	<!-- end content -->
 </div>
