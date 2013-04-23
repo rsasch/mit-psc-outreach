@@ -26,7 +26,7 @@
 	<div id="content">
 		<p class="sitename">MIT Outreach Database</p>
 		<h1 class="pagename">Log In</h1>
-		<p>Welcome to the MIT Outreach Database, and thank you for your interest in adding your outreach programs to our web-based database.  To determine if a project that you would like to post will fit the criteria for this database, please read our <a href="<?=base_url()?>about">definition of outreach</a>.</p>
+		<p>Welcome to the MIT Outreach Database, and thank you for your interest in adding your outreach programs to our web-based database.  To determine if a project that you would like to post will fit the criteria for this database, please read our <a href="<?=base_url()?>index.php/about">definition of outreach</a>.</p>
 		<p>Please click the login link below to access your account and add/edit an entry.  Click the "Request an account" link to create a new account.</p>
 		<p><strong>Note:</strong> This site uses MIT certificates and requires javascript.</p>
 		<div class="admin">

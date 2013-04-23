@@ -36,7 +36,7 @@
 		<?php echo validation_errors(); ?>
 		<?php $i = 1; ?>
 		<?php foreach ($allTerms as $category => $terms): ?>
-			<form action="http://localhost:8888/mit-psc-outreach/adminterm/add" method="post">
+			<form action="<?=site_url("adminterm/add")?>" method="post">
 			<h2><?=$category?></h2>
 			<fieldset class="category">
 				<ul>

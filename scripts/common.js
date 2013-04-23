@@ -205,13 +205,13 @@ $(document).ready(function(){
 	// behavior for login button
 	// <input type="button" value="login" name="login" />
 	$("input[name='login']").click(function() {
-		window.location = "/mit-psc-outreach/admin";
+		window.location = "/mit-psc-outreach/index.php/admin";
 	});
 	
 	// behavior for request an account button
 	// <input type="button" value="request an account" name="request" />
 	$("input[name='request']").click(function() {
-		window.location = "/mit-psc-outreach/login/add";
+		window.location = "/mit-psc-outreach/index.php/login/add";
 	});
 	
 

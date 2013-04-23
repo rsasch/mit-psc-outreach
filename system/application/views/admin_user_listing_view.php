@@ -47,7 +47,7 @@
 			<?php foreach ($pscusers as $user): ?>
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
-				<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+				<td><a href="<?=base_url()?>index.php/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 				<td><?=$user->dlc?></td>
 				<td><?=$user->email?></td>
 			</tr>
@@ -74,7 +74,7 @@
 			<?php foreach ($progusers as $user): ?>
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
-				<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+				<td><a href="<?=base_url()?>index.php/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 				<td><?=$user->dlc?></td>
 				<td><?=$user->email?></td>
 			</tr>
@@ -102,7 +102,7 @@
 			<?php foreach ($inactiveusers as $user): ?>
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
-				<td><a href="<?=base_url()?>adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
+				<td><a href="<?=base_url()?>index.php/adminuser/edit/<?=$user->user_id?>"><?=$user->last_name?>, <?=$user->first_name?></a></td>
 				<td><?=$user->role_name?></td>
 				<td><?=$user->dlc?></td>
 				<td><?=$user->kerb?></td>

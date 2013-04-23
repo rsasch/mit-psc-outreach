@@ -37,7 +37,7 @@
 		<?php elseif ($userlevel != '0'): ?>
 			<p>Make your edits in the fields below and then submit the listing to the Public Service Center database administrator.</p>
 		<?php endif; ?>
-		<form action="http://localhost:8888/mit-psc-outreach/<?=("adminprogram/edit/" . $program->program_id . "/" . $mode)?>" method="post" enctype="multipart/form-data">		
+		<form action="<?=site_url("adminprogram/edit/" . $program->program_id . "/" . $mode)?>" method="post" enctype="multipart/form-data">		
 			<fieldset>
 				<input type="hidden" name="MAX_FILE_SIZE" value="1000000" class="hidden" />
 				<input type="hidden" name="program_id" value="<?=set_value('program_id',$program->program_id)?>" class="hidden" />

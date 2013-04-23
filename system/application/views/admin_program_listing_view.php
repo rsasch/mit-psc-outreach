@@ -36,7 +36,7 @@
 			</div>
 			<div class="toplink">
 				<div class="outer">
-					<div class="inner"><a href="<?=base_url()?>adminprogram/edit">+ Add a new program</a></div>
+					<div class="inner"><a href="<?=base_url()?>index.php/adminprogram/edit">+ Add a new program</a></div>
 				</div>
 			</div>
 		</div>
@@ -62,13 +62,13 @@
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
 					<?php if ($userlevel == "0"): ?>
-						<td><a href="<?=base_url()?>adminprogram/edit/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>index.php/adminprogram/edit/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<?php else: ?>
-						<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>index.php/adminprogram/preview/<?=$program->program_id?>/list"><?=$program->title?></a></td>
 					<?php endif; ?>
 				<td><?=$program->last_name?>, <?=$program->first_name?></td>
 				<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
-				<td><a href="<?=base_url()?>adminprogram/inactivate/<?=$program->program_id?>">inactivate</a></td>
+				<td><a href="<?=base_url()?>index.php/adminprogram/inactivate/<?=$program->program_id?>">inactivate</a></td>
 			<?php endforeach; ?>
 		</tbody>
 		</table>
@@ -94,13 +94,13 @@
 			<?php $even_odd = ( 'odd' != $even_odd ) ? 'odd' : ''; ?>
 			<tr class="<?=$even_odd?>">
 					<?php if ($userlevel == "0"): ?>
-						<td><a href="<?=base_url()?>adminprogram/edit/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>index.php/adminprogram/edit/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<?php else: ?>
-						<td><a href="<?=base_url()?>adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
+						<td><a href="<?=base_url()?>index.php/adminprogram/preview/<?=$program->program_id?>/approve"><?=$program->title?></a></td>
 					<?php endif; ?>
 				<td><?=$program->last_name?>, <?=$program->first_name?></td>
 				<td><?=date("n/j/y", strtotime($program->program_moddate))?></td>
-				<td><a href="<?=base_url()?>adminprogram/activate/<?=$program->program_id?>">activate</a></td>
+				<td><a href="<?=base_url()?>index.php/adminprogram/activate/<?=$program->program_id?>">activate</a></td>
 			<?php endforeach; ?>
 		</tbody>
 		</table>

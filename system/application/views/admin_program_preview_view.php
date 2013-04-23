@@ -50,7 +50,7 @@
 		<?php if ($mode != "list" || $program->add_inprogress_flag == '1'): ?>
 		<p>Your program has not yet been submitted. You may go back and make edits, save the content you've entered, or submit it now.</p>
 		<?php endif; ?>
-		<form action="http://localhost:8888/mit-psc-outreach/<?=("adminprogram/edit/" . $program->program_id . "/$mode")?>" method="post">
+		<form action="<?=site_url("adminprogram/edit/" . $program->program_id . "/$mode")?>" method="post">
 			<div class="buttons">
 				<input type="hidden" name="mode" value="<?=$mode?>" class="hidden" />
 				<input type="submit" value="Edit program" name="edit" />		
